@@ -1,0 +1,287 @@
+{
+	"id": "d657fc1c-a13c-4f58-8171-5c202cf0cc54",
+	"name": "Agent app",
+	"timestamp": "2024-02-03T06:56:00.513Z",
+	"collection_id": "30947989-345cf93d-5f98-464a-ab29-cb624d44715c",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-02-03T06:55:57.914Z",
+	"totalFail": 8,
+	"results": [
+		{
+			"id": "a5464909-43e4-41b2-bcd7-3364b8c6f9a2",
+			"name": "СОЗДАНИЕ ВОДИТЕЛЯ",
+			"url": "https://partner.agentapp.ru/v1/insured_objects/drivers",
+			"time": 85,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Your test name": false,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				85
+			],
+			"allTests": [
+				{
+					"Your test name": false,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "a78b1147-f7ca-4e2b-a74f-9f19d183ec49",
+			"name": "СОЗДАНИЕ СОБСТВЕННИКА",
+			"url": "https://partner.agentapp.ru/v1/insured_objects/owners/natural_persons",
+			"time": 149,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				149
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "f19cfa90-96fa-4341-ad12-7c09bab994c5",
+			"name": " ПОЛУЧЕНИЕ ТОКЕНА АВТОРИЗАЦИИ",
+			"url": "https://partner.agentapp.ru/v1/users/obtain-token",
+			"time": 195,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				195
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "e783bd5b-c0b8-41e0-ab70-463b4be9f753",
+			"name": "СОЗДАНИЕ СТРАХОВАТЕЛЯ",
+			"url": "https://partner.agentapp.ru/v1/insured_objects/insurants/natural_persons",
+			"time": 142,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Your test name": false,
+				"Response time is less than 350ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 350ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				142
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Your test name": false,
+					"Response time is less than 350ms": true
+				}
+			]
+		},
+		{
+			"id": "11e26c0a-4b27-4ae7-8337-e88b483a4649",
+			"name": "СОЗДАНИЕ АВТОМОБИЛЯ",
+			"url": "https://partner.agentapp.ru/v1/insured_objects/cars",
+			"time": 96,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "35255657-2598-4561-a9ff-aa013864dc77",
+			"name": "ОБЪЕДИНЕНИЕ СУБЪЕКТОВ И ОБЪЕКТОВ СТРАХОВАНИЯ В ОДНУ СУЩНОСТЬ «ОБЪЕКТ СТРАХОВАНИЯ»",
+			"url": "https://partner.agentapp.ru/v1/insured_objects/",
+			"time": 100,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Response time is less than 600ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 600ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				100
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Response time is less than 600ms": true
+				}
+			]
+		},
+		{
+			"id": "7fb1b02e-d2d8-4522-9bd4-bd21f01e3a0d",
+			"name": "СОЗДАНИЕ ДОГОВОРА",
+			"url": "https://partner.agentapp.ru/v3/agreements/calculations",
+			"time": 140,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				140
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 907,
+	"collection": {
+		"requests": [
+			{
+				"id": "a5464909-43e4-41b2-bcd7-3364b8c6f9a2",
+				"method": "POST"
+			},
+			{
+				"id": "a78b1147-f7ca-4e2b-a74f-9f19d183ec49",
+				"method": "POST"
+			},
+			{
+				"id": "f19cfa90-96fa-4341-ad12-7c09bab994c5",
+				"method": "POST"
+			},
+			{
+				"id": "e783bd5b-c0b8-41e0-ab70-463b4be9f753",
+				"method": "POST"
+			},
+			{
+				"id": "11e26c0a-4b27-4ae7-8337-e88b483a4649",
+				"method": "POST"
+			},
+			{
+				"id": "35255657-2598-4561-a9ff-aa013864dc77",
+				"method": "POST"
+			},
+			{
+				"id": "7fb1b02e-d2d8-4522-9bd4-bd21f01e3a0d",
+				"method": "POST"
+			}
+		]
+	}
+}
